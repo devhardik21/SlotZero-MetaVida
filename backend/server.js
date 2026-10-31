@@ -17,9 +17,9 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: '*', // Allow frontend Vite dev server & production origin
-  credentials: true,
+  origin: '*'
 }));
+
 app.use(express.json());
 
 if (process.env.NODE_ENV !== 'production') {
